@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>LinguaLite — Login / Register</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body data-page="auth">
+
+  <!-- HEADER -->
+  <header>
+    <div class="brand">
+      <div class="logo">LL</div>
+      <div>
+        <strong>LinguaLite</strong>
+        <div class="small">Sign in & start learning</div>
+      </div>
+    </div>
+
+    <div id="header-user"></div>
+  </header>
+
+  <!-- MAIN AREA -->
+  <div class="container">
+
+    <div class="grid">
+
+      <!-- LEFT COLUMN -->
+      <main class="card">
+        <h2 class="headline">Create Account</h2>
+
+        <input id="su-identifier" class="input" placeholder="Email or Phone">
+        <input id="su-password" class="input" type="password" placeholder="Password">
+
+        <div class="row" style="margin-top:12px;">
+          <button class="btn" id="su-create">Create Account (Send OTP)</button>
+        </div>
+
+        <!-- OTP SECTION -->
+        <div id="su-otp-section" style="display:none; margin-top:18px;">
+          <input id="su-otp" class="input" placeholder="Enter OTP">
+
+          <div class="row" style="margin-top:12px;">
+            <button class="btn" id="su-verify">Verify & Sign In</button>
+          </div>
+
+          <p id="su-note" class="small muted" style="margin-top:10px;"></p>
+        </div>
+
+        <hr style="margin-top:24px;">
+
+        <!-- LOGIN AREA -->
+        <h2 class="headline">Sign In</h2>
+
+        <input id="si-identifier" class="input" placeholder="Email or Phone">
+        <input id="si-password" class="input" type="password" placeholder="Password">
+
+        <div class="row" style="margin-top:12px;">
+          <button class="btn" id="si-btn">Sign In</button>
+        </div>
+      </main>
+
+      <!-- RIGHT COLUMN -->
+      <aside class="card">
+        <h3>Why create an account?</h3>
+        <ul class="small">
+          <li>Track your learning progress</li>
+          <li>Resume lessons anytime</li>
+          <li>Attempt quizzes & save results</li>
+          <li>Practice vocabulary</li>
+        </ul>
+
+        <div style="margin-top:16px;">
+          <a class="btn ghost" href="index.html">← Back to Home</a>
+        </div>
+      </aside>
+
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="assets/app.js"></script>
+</body>
+</html>

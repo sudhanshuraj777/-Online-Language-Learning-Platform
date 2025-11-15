@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>LinguaLite — Home</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body data-page="index">
+
+  <!-- HEADER -->
+  <header>
+    <div class="brand">
+      <div class="logo">LL</div>
+      <div>
+        <strong>LinguaLite</strong>
+        <div class="small">Learn languages smarter</div>
+      </div>
+    </div>
+
+    <!-- USER/AUTH SECTION (loaded by JS) -->
+    <div id="header-user"></div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <div class="grid">
+      <!-- LEFT SIDE -->
+      <main class="card">
+        <h2 class="headline">Welcome to LinguaLite</h2>
+        <p class="muted">
+          Your interactive platform to learn languages with lessons, quizzes, vocabulary, and progress tracking.
+        </p>
+
+        <h3 style="margin-top:18px;">Featured Courses</h3>
+        <div id="featured" class="list"></div>
+
+        <div class="card" style="margin-top:20px;">
+          <h4>How to Start Learning</h4>
+          <ol class="small">
+            <li>Create an account from the <strong>Login</strong> page.</li>
+            <li>Go to <a href="courses.html">Courses</a> and enroll.</li>
+            <li>Open lessons and complete quizzes.</li>
+            <li>Practice vocabulary on the <a href="vocab.html">Vocabulary Page</a>.</li>
+            <li>Track everything from your <a href="dashboard.html">Dashboard</a>.</li>
+          </ol>
+        </div>
+      </main>
+
+      <!-- RIGHT SIDE -->
+      <aside class="card">
+        <h4>Quick Links</h4>
+        <div style="margin-top:12px;">
+          <a class="btn" href="courses.html">Browse Courses</a>
+        </div>
+        <div style="margin-top:12px;">
+          <a class="btn ghost" href="dashboard.html">My Dashboard</a>
+        </div>
+
+        <p class="muted" style="margin-top:16px;">
+          All data is saved locally using your browser’s storage.  
+          No backend needed.
+        </p>
+      </aside>
+    </div>
+
+    <div class="footer">© LinguaLite · Front-end Learning Platform</div>
+
+  </div>
+
+  <!-- MAIN JS FILE -->
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>LinguaLite — Lesson</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body data-page="lesson">
+
+  <!-- HEADER -->
+  <header>
+    <div class="brand">
+      <div class="logo">LL</div>
+      <div>
+        <strong>LinguaLite</strong>
+        <div class="small">Lesson playback</div>
+      </div>
+    </div>
+
+    <div id="header-user"></div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <div class="card">
+      <h2 id="lessonTitle" class="headline">Loading lesson...</h2>
+      <p id="lessonContent" class="muted">Please wait...</p>
+
+      <!-- Player Simulation -->
+      <div class="card" style="margin-top:16px;">
+        <h4>Lesson Player</h4>
+
+        <div class="progress" style="margin-top:10px;">
+          <i></i>
+        </div>
+
+        <div class="row" style="margin-top:12px;">
+          <button class="btn" id="playLesson">Play Lesson</button>
+          <button class="btn ghost" id="completeLesson">Mark Complete</button>
+          <a id="openQuiz" class="btn ghost" href="#">Open Quiz →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="btn ghost" href="courses.html">← Back to Courses</a>
+    </div>
+
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
